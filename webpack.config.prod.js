@@ -3,7 +3,6 @@
  * PRODUCTION
  */
 
-const path = require('path');
 const webpack = require('webpack');
 
 const paths = require('./paths');
@@ -14,7 +13,7 @@ const config = {
 
 module.exports = {
   entry: [
-    path.join(paths.js, 'app.js'),
+    paths.jsEntryPoint,
   ],
   output: {
     path: paths.dist,

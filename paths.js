@@ -1,8 +1,11 @@
 const path = require('path');
 
+const jsPath = path.resolve(__dirname, 'src/js');
+
 module.exports = {
   dist: path.resolve(__dirname, 'dist'),
   src: path.resolve(__dirname, 'src'),
-  js: path.resolve(__dirname, 'src/js'),
   assets: path.resolve(__dirname, 'src/assets'),
+  js: jsPath,
+  jsEntryPoint: path.join(jsPath, 'app.js'),
 };

@@ -3,8 +3,6 @@
  * DEVELOPMENT
  */
 
-const path = require('path');
-
 const paths = require('./paths');
 const config = {
   module: require('./webpack.config.module'),
@@ -14,7 +12,7 @@ const config = {
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    path.join(paths.js, 'app.js'),
+    paths.jsEntryPoint,
   ],
   output: {
     path: paths.dist,
