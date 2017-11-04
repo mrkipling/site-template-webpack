@@ -1,7 +1,6 @@
 import React from 'react';
-
 import CSSModules from 'react-css-modules';
-import styles from './ModuleTwo.scss';
+import styles from './styles.scss';
 
 import superCute from './images/super-cute.jpg';
 
