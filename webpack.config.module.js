@@ -1,16 +1,27 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const rules = {
+  js: {
+    test: /\.(js|jsx)$/,
+    exclude: /node_modules/,
+    use: [
+      'babel-loader',
+      'eslint-loader',
+    ],
+  },
+  files: {
+    test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
+    use: [
+      'file-loader?name=./assets/[hash].[ext]',
+    ],
+  },
+};
+
 module.exports = {
   dev: {
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: [
-          'babel-loader',
-          'eslint-loader',
-        ],
-      },
+      rules.js,
+      rules.files,
       {
         test: /\.scss$/,
         use: [
@@ -20,24 +31,12 @@ module.exports = {
           'sass-loader',
         ],
       },
-      {
-        test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
-        use: [
-          'file-loader?name=./assets/[hash].[ext]',
-        ],
-      },
     ]
   },
   prod: {
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: [
-          'babel-loader',
-          'eslint-loader',
-        ],
-      },
+      rules.js,
+      rules.files,
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
@@ -47,12 +46,6 @@ module.exports = {
             'sass-loader',
           ],
         }),
-      },
-      {
-        test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
-        use: [
-          'file-loader?name=./assets/[hash].[ext]',
-        ],
       },
     ]
   },
