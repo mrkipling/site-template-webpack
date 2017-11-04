@@ -1,7 +1,3 @@
-const path = require('path');
-
-const paths = require('./paths');
-
 const breakpoints = {
   xs: '544px',
   sm: '768px',
