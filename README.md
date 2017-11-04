@@ -7,6 +7,7 @@ Webpack + React edition
 
 * Webpack
 * Hot Module Replacement / React Hot Loader
+* Styles loaded inline
 
 ### Build
 
@@ -27,7 +28,6 @@ Webpack + React edition
 * PostCSS configured with:
   * Autoprefixer
   * Easy media queries (e.g. `@below xs {}`)
-  * PostCSS Assets (inline images in CSS, get dimensions, cachebusting, etc.)
 
 -----
 
@@ -46,7 +46,7 @@ Webpack + React edition
 
 #### Breakpoints
 
-##### Values
+##### Default values
 
 * `xs`: 544px
 * `sm`: 768px
