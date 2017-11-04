@@ -1,7 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const paths = require('./paths');
@@ -19,11 +17,9 @@ module.exports = {
     hot: true,
   },
   plugins: [
-    new CleanWebpackPlugin(paths.dist),
     new HtmlWebpackPlugin({
       template: path.join(paths.src, 'index.html'),
     }),
-    new ExtractTextPlugin('app.bundle.css'),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
@@ -39,13 +35,12 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({
-          use: [
-            'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-            'postcss-loader',
-            'sass-loader',
-          ],
-        }),
+        use: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
