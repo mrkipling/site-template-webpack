@@ -1,7 +1,11 @@
+/**
+ * Webpack configuration for
+ * DEVELOPMENT
+ */
+
 const path = require('path');
 
 const paths = require('./paths');
-
 const config = {
   module: require('./webpack.config.module'),
   plugins: require('./webpack.config.plugins'),
