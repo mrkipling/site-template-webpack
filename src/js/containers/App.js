@@ -1,9 +1,7 @@
 import React from 'react';
 
-import {
-  ModuleOne,
-  ModuleTwo,
-} from '../components';
+import ModuleOne from '../components/ModuleOne';
+import ModuleTwo from '../components/ModuleTwo';
 
 import '../../sass/site.scss';
 
