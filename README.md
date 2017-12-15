@@ -1,7 +1,8 @@
 # Site Template
+
 Webpack + React edition
 
------
+---
 
 ### Development
 
@@ -28,8 +29,10 @@ Webpack + React edition
 * PostCSS configured with:
   * Autoprefixer
   * Easy media queries (e.g. `@below xs {}`)
+* Stylelint using recommended config, extended with SCSS-specific rules and
+  other sensible rules
 
------
+---
 
 ### Getting started
 
@@ -42,7 +45,7 @@ Webpack + React edition
   * `npm run build`
   * Files are output to `./dist`
 
------
+---
 
 #### Breakpoints
 
