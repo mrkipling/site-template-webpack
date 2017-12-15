@@ -14,27 +14,30 @@ body {
   padding: 10px 0 10px 10px;
 }
 
-/* spacing */
-
-h1, h2, h3, h4, h5, h6, p, ul, ol {
-  margin: 15px 0;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
 /* headings */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: $fontSize-regular;
   font-family: $fontFamily-heading;
   font-weight: bold;
 }
 
-h1 { font-size: $fontSize-h1; }
-h2 { font-size: $fontSize-h2; }
-h3 { font-size: $fontSize-h3; }
+h1 {
+  font-size: $fontSize-h1;
+}
+
+h2 {
+  font-size: $fontSize-h2;
+}
+
+h3 {
+  font-size: $fontSize-h3;
+}
 
 /* formatting */
 
@@ -95,20 +98,20 @@ li {
 
 button,
 .button,
-input[type=button],
-input[type=submit] {
+input[type='button'],
+input[type='submit'] {
   font-size: $fontSize-regular;
   padding: 6px 18px;
 }
 
-input[type=text],
-input[type=password],
-input[type=url],
-input[type=datetime],
-input[type=datetime-local],
-input[type=month],
-input[type=number],
-input[type=tel] {
+input[type='text'],
+input[type='password'],
+input[type='url'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='number'],
+input[type='tel'] {
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 3px;
@@ -117,7 +120,7 @@ input[type=tel] {
   width: 300px;
 }
 
-input[type=file] {
+input[type='file'] {
   font-size: $fontSize-regular;
 }
 
@@ -133,4 +136,22 @@ textarea {
 
 textarea {
   width: 450px;
+}
+
+/* spacing */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 15px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
