@@ -4,10 +4,8 @@
  */
 
 const paths = require('./paths');
-const config = {
-  module: require('./webpack.config.module'),
-  plugins: require('./webpack.config.plugins'),
-};
+const moduleConfig = require('./webpack.config.module');
+const pluginsConfig = require('./webpack.config.plugins');
 
 module.exports = {
   entry: [
@@ -21,9 +19,12 @@ module.exports = {
   devServer: {
     hot: true,
   },
-  plugins: config.plugins.dev,
-  module: config.module.dev,
+  plugins: pluginsConfig.dev,
+  module: moduleConfig.dev,
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [
+      '.js',
+      '.jsx',
+    ],
   },
 };

@@ -11,9 +11,7 @@ const rules = {
   },
   files: {
     test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
-    use: [
-      'file-loader?name=./assets/[hash].[ext]',
-    ],
+    use: ['file-loader?name=./assets/[hash].[ext]'],
   },
 };
 
@@ -31,7 +29,7 @@ module.exports = {
           'sass-loader',
         ],
       },
-    ]
+    ],
   },
   prod: {
     rules: [
@@ -47,6 +45,6 @@ module.exports = {
           ],
         }),
       },
-    ]
+    ],
   },
 };

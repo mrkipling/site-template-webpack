@@ -5,6 +5,18 @@ module.exports = {
   },
   extends: 'airbnb',
   rules: {
+    'array-element-newline': [
+      2,
+      {
+        minItems: 2,
+      },
+    ],
+    'array-bracket-newline': [
+      2,
+      {
+        minItems: 2,
+      },
+    ],
     'class-methods-use-this': 0,
     'func-names': 0,
     indent: [2, 2, { SwitchCase: 1 }],

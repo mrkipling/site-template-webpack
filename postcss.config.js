@@ -1,3 +1,6 @@
+const autoprefixer = require('autoprefixer');
+const postcssEasyMediaQuery = require('postcss-easy-media-query');
+
 const breakpoints = {
   xs: '544px',
   sm: '768px',
@@ -8,7 +11,7 @@ const breakpoints = {
 module.exports = {
   parser: 'postcss-scss',
   plugins: [
-    require('autoprefixer'),
-    require('postcss-easy-media-query')({ breakpoints }),
+    autoprefixer,
+    postcssEasyMediaQuery({ breakpoints }),
   ],
 };
