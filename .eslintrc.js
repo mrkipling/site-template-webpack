@@ -5,31 +5,14 @@ module.exports = {
   },
   extends: 'airbnb',
   rules: {
-    'array-element-newline': [
-      2,
-      {
-        minItems: 2,
-      },
-    ],
-    'array-bracket-newline': [
-      2,
-      {
-        minItems: 2,
-      },
-    ],
+    'array-element-newline': [2, { minItems: 2 }],
+    'array-bracket-newline': [2, { minItems: 2 }],
     'class-methods-use-this': 0,
     'func-names': 0,
     indent: [2, 2, { SwitchCase: 1 }],
     'import/no-extraneous-dependencies': 0,
     'jsx-a11y/no-static-element-interactions': 0,
-    'jsx-a11y/label-has-for': [
-      2,
-      {
-        required: {
-          some: ['nesting', 'id'],
-        },
-      },
-    ],
+    'jsx-a11y/label-has-for': [2, { required: { some: ['nesting', 'id'] } }],
     'max-len': 0,
     'new-cap': 0,
     'no-alert': 0,
