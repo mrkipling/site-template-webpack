@@ -9,6 +9,7 @@ Webpack + React edition
 * Webpack
 * Hot Module Replacement / React Hot Loader
 * Styles loaded inline
+* Hygen for component code generation
 
 ### Build
 
