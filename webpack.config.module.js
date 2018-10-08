@@ -4,10 +4,7 @@ const rules = {
   js: {
     test: /\.(js|jsx)$/,
     exclude: /node_modules/,
-    use: [
-      'babel-loader',
-      'eslint-loader',
-    ],
+    use: ['babel-loader'],
   },
   files: {
     test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,

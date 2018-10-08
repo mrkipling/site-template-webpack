@@ -9,6 +9,10 @@ generated from styleName will be appended.
 */
 
 class ModuleOne extends React.Component {
+  state = {
+    lol: 'dongs',
+  };
+
   render() {
     return (
       <section styleName="module">
