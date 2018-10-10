@@ -1,14 +1,14 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const rules = {
   js: {
     test: /\.(js|jsx)$/,
     exclude: /node_modules/,
-    use: ['babel-loader'],
+    use: ["babel-loader"],
   },
   files: {
     test: /\.(png|jpg|gif|svg|eot|svg|ttf|woff|woff2)$/,
-    use: ['file-loader?name=./assets/[hash].[ext]'],
+    use: ["file-loader?name=./assets/[hash].[ext]"],
   },
 };
 
@@ -20,10 +20,9 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
-          'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-          'postcss-loader',
-          'sass-loader',
+          "style-loader",
+          "css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]",
+          "postcss-loader",
         ],
       },
     ],
@@ -36,9 +35,8 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           use: [
-            'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-            'postcss-loader',
-            'sass-loader',
+            "css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]",
+            "postcss-loader",
           ],
         }),
       },

@@ -1,21 +1,14 @@
 import React from "react";
-import CSSModules from "react-css-modules";
-import styles from "./styles.scss";
-
-/*
-N.B. Use styleName instead of className in order to use CSS Modules. You can use
-className if you like but that will be a global class. The class that is
-generated from styleName will be appended.
-*/
+import { ModuleOneStyled } from "./styles";
 
 class ModuleOne extends React.Component {
   render() {
     return (
-      <section styleName="module">
-        <h2 styleName="title">Module One</h2>
-      </section>
+      <ModuleOneStyled>
+        <h2 className="title">Module One</h2>
+      </ModuleOneStyled>
     );
   }
 }
 
-export default CSSModules(ModuleOne, styles);
+export default ModuleOne;

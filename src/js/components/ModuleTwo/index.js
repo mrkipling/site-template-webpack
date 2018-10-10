@@ -1,24 +1,18 @@
 import React from "react";
-import CSSModules from "react-css-modules";
-import styles from "./styles.scss";
 
-import superCute from "./images/super-cute.jpg";
+import { ModuleTwoStyled } from "./styles";
 
-/*
-Notice how the same class (well, styleName) is used as ModuleOne?
-Thanks to react-css-modules we don't have to worry about CSS class name
-collisions - class names are namespaced per-module.
-*/
+import SuperCuteImage from "./images/super-cute.jpg";
 
 class ModuleTwo extends React.Component {
   render() {
     return (
-      <section styleName="module">
-        <h2 styleName="title">Module Two</h2>
-        <img src={superCute} alt="This is super-cute" />
-      </section>
+      <ModuleTwoStyled>
+        <h2 className="title">Module Two</h2>
+        <img src={SuperCuteImage} alt="This is super-cute" />
+      </ModuleTwoStyled>
     );
   }
 }
 
-export default CSSModules(ModuleTwo, styles);
+export default ModuleTwo;
