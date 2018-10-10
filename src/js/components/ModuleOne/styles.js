@@ -10,7 +10,7 @@ export const ModuleOneStyled = styled.section`
 
   .title {
     color: #fff;
-    font-size: 22px;
+    font-size: ${props => props.theme.fonts.sizes.h3};
     margin: 0;
   }
 `;
