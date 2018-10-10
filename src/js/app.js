@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
+import { ThemeProvider } from "styled-components";
 
 import App from "./containers/App";
+
+import theme from "./theme";
 
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
-      <Component />
+      <ThemeProvider theme={theme}>
+        <Component />
+      </ThemeProvider>
     </AppContainer>,
     document.getElementById("app")
   );
