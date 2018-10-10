@@ -1,18 +1,17 @@
 ---
 to: src/js/components/<%= name %>/index.js
 ---
-import React from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './styles.scss';
+import React from "react";
+import { <%= name %>Styled } from "./styles";
 
 class <%= name %> extends React.Component {
   render() {
     return (
-      <section styleName="module">
+      <<%= name %>Styled>
         <h2><%= name %></h2>
-      </section>
+      </<%= name %>Styled>
     );
   }
 }
 
-export default CSSModules(<%= name %>, styles);
+export default <%= name %>;
