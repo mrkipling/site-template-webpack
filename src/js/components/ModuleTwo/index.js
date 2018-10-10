@@ -1,8 +1,8 @@
-import React from 'react';
-import CSSModules from 'react-css-modules';
-import styles from './styles.scss';
+import React from "react";
+import CSSModules from "react-css-modules";
+import styles from "./styles.scss";
 
-import superCute from './images/super-cute.jpg';
+import superCute from "./images/super-cute.jpg";
 
 /*
 Notice how the same class (well, styleName) is used as ModuleOne?

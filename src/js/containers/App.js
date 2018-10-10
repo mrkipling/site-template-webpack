@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import ModuleOne from '../components/ModuleOne';
-import ModuleTwo from '../components/ModuleTwo';
+import ModuleOne from "../components/ModuleOne";
+import ModuleTwo from "../components/ModuleTwo";
 
-import '../../sass/site.scss';
+import "../../sass/site.scss";
 
 export default class App extends React.Component {
   render() {
