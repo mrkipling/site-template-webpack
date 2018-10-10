@@ -26,6 +26,7 @@ Webpack + React edition
 - Uses styled-components
 - Sensible global reset
 - Theme provider with theme template
+- Also uses css-loader (with PostCSS and autoprefixer) in case you need to include standard CSS
 
 ---
 
