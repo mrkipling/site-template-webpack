@@ -4,6 +4,10 @@ import reset from "styled-reset";
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     color: ${props => props.theme.colors.text};
     font-family: ${props => props.theme.fonts.families.default};
