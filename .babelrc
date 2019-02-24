@@ -1,8 +1,14 @@
 {
     "presets": [
-        ["env", { "modules": false }],
-        "react",
-        "stage-1"
+        [
+            "@babel/env",
+            {
+                "modules": false
+            }
+        ],
+        "@babel/react",
     ],
-    "plugins": ["react-hot-loader/babel"]
+    "plugins": [
+        "react-hot-loader/babel"
+    ]
 }
