@@ -8,9 +8,7 @@ function ModuleOne() {
     <ModuleOneStyled>
       <h2 className="title">Module One</h2>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </ModuleOneStyled>
   );
 }

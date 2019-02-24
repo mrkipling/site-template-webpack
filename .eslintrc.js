@@ -4,22 +4,18 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    sourceType: 'module',
+    sourceType: "module",
   },
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'prettier',
-    'prettier/react',
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react",
   ],
-  parser: 'babel-eslint',
-  plugins: [
-    'react',
-    'react-hooks',
-    'prettier',
-    'babel'
-  ],
+  parser: "babel-eslint",
+  plugins: ["react", "react-hooks", "prettier", "babel"],
   rules: {
-    'babel/semi': 1,
+    "babel/semi": 1,
+    "react-hooks/rules-of-hooks": "error",
   },
 };
