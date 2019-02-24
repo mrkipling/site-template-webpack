@@ -13,7 +13,12 @@ module.exports = {
     'prettier/react',
   ],
   parser: 'babel-eslint',
-  plugins: ['react', 'prettier', 'babel'],
+  plugins: [
+    'react',
+    'react-hooks',
+    'prettier',
+    'babel'
+  ],
   rules: {
     'babel/semi': 1,
   },
