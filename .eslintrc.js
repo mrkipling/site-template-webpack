@@ -17,5 +17,6 @@ module.exports = {
   rules: {
     "babel/semi": 1,
     "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warning",
   },
 };
